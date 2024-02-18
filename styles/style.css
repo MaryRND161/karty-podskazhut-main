@@ -1,0 +1,61 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: Raleway, sans-serif;
+  --accent-font: "STIX Two Text", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font, Arial, sans-serif);
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+.header {
+  padding-top: 10vi;
+}
+
+.heading {
+  font-family: var(--accent-font, Times, serif);
+  line-height: 0.9;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-section {
+  padding-left: 5vi;
+  padding-right: 5vi;
+}
+
+.header-title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vi, 7.5rem);
+  padding-bottom: 40px;
+}
+
+.content-title {
+  font-size: 30px;
+  padding-top: 7vi;
+  padding-bottom: 2.5vi;
+}
+
