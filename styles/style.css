@@ -59,3 +59,23 @@ figure {
   padding-bottom: 2.5vi;
 }
 
+.content__text-block {
+  font-size: 18px;
+}
+
+.content__paragraph > .content__text-block:not(:last-of-type) {
+  padding-bottom: 1.5em;
+}
+
+a {
+ color: inherit; 
+}
+
+.content__blockquote {
+  display: block;
+  max-width: 75vi;
+  margin: 27px auto;
+  font-style: italic;
+  line-height: 2;
+  
+}
