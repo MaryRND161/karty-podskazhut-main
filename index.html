@@ -46,7 +46,7 @@
           мультимедиа-художник Питер Шмидт.
         </p>
         <figure class="content__figure">
-          <picture class="content__picture">
+          <picture>
             <source srcset="./images/cards-1x.avif 1x,
                             ./images/cards-1x.avif 2x" 
             type="image/avif"
@@ -59,15 +59,13 @@
               srcset="./images/cards-1x.png 1x,
                        ./images/cards-2x.png 2x" 
               alt="Колода Oblique Strategies"
+              class="content__picture"
               loading="lazy"
             >
           </picture> 
-
-
-
-            <figcaption class="content__picture-caption">
-              Колода Oblique Strategies
-            </figcaption>
+          <figcaption class="content__picture-caption">
+            Колода Oblique Strategies
+          </figcaption>
         </figure> 
       </div>
       <div class="content__text-block">
@@ -115,6 +113,17 @@
             Android.
           </a>
         </p>
+        <article class="content__card">
+          <h3 class="heading content__card-title">
+            Use an 
+            <span class="colored-text">
+              old idea
+            </span> 
+          </h3>
+          <p class="content__card-subtitle">
+            Воспользуйтесь старой идеей
+          </p>
+        </article>
       </div>
       <h2 class="heading content-title">
         Кто пользовался Oblique Strategies

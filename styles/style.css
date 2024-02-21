@@ -4,6 +4,7 @@
   --accent-color: #FFAB6B;
   --main-font: Raleway, sans-serif;
   --accent-font: "STIX Two Text", serif;
+  --current-color: #b3b3b3;
 }
 
 *,
@@ -108,10 +109,55 @@ li:nth-last-child(n+1) {
   font-weight: 600;
 }
 
+.content__figure {
+  inline-size: calc(100% + 10vi);
+  position: relative;
+  left: -5vi;
+  margin-block: 7vi;
+}
+
 .content__picture {
   inline-size: 100%;
 }
 
-.content__figure {
-  margin-block: 7vi;
+.content__picture-caption {
+  border-bottom: 1px solid  var(--text-color);
+  padding-block: 20px;
+  text-align: center;
+}
+
+.content__card {
+  border: 1px solid var(--text-color);
+  margin-block-start: 7vi;
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__card-title {
+  font-size: 60px;
+  padding-inline: 10px;
+}
+
+.content__card-subtitle {
+  padding-inline: 10px;
+}
+
+.colored-text {
+  display: inline-block;
+  position: relative;
+}
+
+.colored-text::after {
+  display: block;
+  content: "";
+  background-color: var(--accent-color);
+  inline-size: calc(100% + 4vi);
+  block-size: 0.25em;
+  top: 60%;
+  left: -2vi;
+  position: absolute;
+  z-index: -1;
 }
